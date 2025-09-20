@@ -1,2 +1,4 @@
-
-
+.full-height-white {
+  min-height: 100vh;
+  background-color: #ffffff;
+}
