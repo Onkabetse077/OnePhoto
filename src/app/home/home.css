@@ -1,0 +1,170 @@
+
+.home-screen {
+  min-height: 100vh; /* min-h-screen */
+}
+
+/* Hero Section */
+.hero {
+  position: relative;       /* relative */
+  height: 100vh;            /* h-screen */
+  display: flex;            /* flex */
+  align-items: center;      /* items-center */
+  justify-content: center;  /* justify-center */
+}
+.backgroundHero {
+     position: absolute; /* absolute */
+    top: 0;             /* inset-0 */
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.backgroundHero img {
+  width: 100%;         /* w-full */
+  height: 100%;        /* h-full */
+  object-fit: cover;   /* object-cover */
+}
+
+.backgroundHero .black-background {
+  position: absolute;      /* absolute */
+  top: 0;                  /* inset-0 */
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* bg-black + bg-opacity-40 */
+}
+
+/* Second div*/
+
+.hero-caption {
+  position: relative;        /* relative */
+  text-align: center;        /* text-center */
+  color: white;              /* text-white */
+  z-index: 10;               /* z-10 */
+  max-width: 56rem;          /* max-w-4xl = 56rem */
+  margin-left: auto;         /* mx-auto → center horizontally */
+  margin-right: auto;
+  padding-left: 1rem;        /* px-4 → 1rem */
+  padding-right: 1rem;
+}
+
+
+.hero-caption-text {
+  font-size: 3rem;       /* text-5xl → 3rem */
+  margin-bottom: 1.5rem; /* mb-6 → 1.5rem */
+}
+
+@media (min-width: 768px) { /* md:text-7xl → 5rem on medium screens */
+  .hero-caption-text {
+    font-size: 5rem;
+  }
+}
+
+.hero-caption-text .block {
+  display: block; /* block */
+}
+
+.home-caption-subtext{
+  font-size: 1.25rem;       /* text-xl → 1.25rem */
+  margin-bottom: 2rem;      /* mb-8 → 2rem */
+  color: #E5E7EB;           /* text-gray-200 */
+}
+
+@media (min-width: 768px) { /* md:text-2xl → 1.5rem on medium screens */
+  .home-caption-subtext {
+    font-size: 1.5rem;
+  }
+}
+
+
+.flex-container {
+  display: flex;            /* flex */
+  flex-direction: column;   /* flex-col */
+  justify-content: center;  /* justify-center */
+  gap: 1rem;                /* gap-4 → 1rem */
+}
+
+@media (min-width: 640px) { /* sm:flex-row */
+  .flex-container {
+    flex-direction: row;
+  }
+}
+
+.hero-btn-view-portfolio {
+  width: 100%;                     /* w-full */
+  background-color: #dc2626;       /* bg-red-600 */
+  color: #ffffff;                  /* text-white */
+  font-size: 1.125rem;             /* text-lg */
+  padding: 0.75rem 1.5rem;        /* py-3 px-6 */
+  border-radius: 0.625rem;         /* rounded */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero-btn-view-portfolio:hover {
+  background-color: #b91c1c;       /* hover:bg-red-700 */
+}
+
+@media (min-width: 640px) {         /* sm:w-auto */
+  .hero-btn-view-portfolio {
+    width: auto;
+  }
+}
+
+
+.hero-btn-get-quote {
+  width: 100%;                        /* w-full */
+  background-color: rgba(255, 255, 255, 0.1); /* bg-white/10 */
+  color: #ffffff;                     /* text-white */
+  font-size: 1.125rem;                /* text-lg */
+  padding: 0.75rem 1.5rem;            /* py-3 px-6 */
+  border-radius: 0.625rem;            /* rounded */
+  border: 1px solid #ffffff;          /* border-white */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-btn-get-quote:hover {
+  background-color: #ffffff;          /* hover:bg-white */
+  color: #000000;                     /* hover:text-black */
+}
+
+@media (min-width: 640px) {            /* sm:w-auto */
+  .hero-btn-get-quote {
+    width: auto;
+  }
+}
+
+
+
+
+ /*Quick Intro Section */
+.intro {
+  padding-top: 5rem;    /* py-20 → 20 * 0.25rem = 5rem */
+  padding-bottom: 5rem;
+  background-color: #F9FAFB; /* bg-gray-50 */
+}
+
+
+div {
+  max-width: 72rem;       /* max-w-6xl = 72rem */
+  margin-left: auto;      /* mx-auto → center horizontally */
+  margin-right: auto;
+  padding-left: 1rem;     /* px-4 → 1rem */
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {  /* sm:px-6 */
+  div {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) { /* lg:px-8 */
+  div {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

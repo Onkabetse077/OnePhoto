@@ -1,0 +1,140 @@
+<div class="home-screen">
+        <!-- Hero Section -->
+<section class="hero">
+        <div class="backgroundHero">
+          <img
+            src="https://images.unsplash.com/photo-1643264623879-bb85ea39c62a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwaG90b2dyYXBoZXIlMjBwb3J0cmFpdCUyMGNhbWVyYXxlbnwxfHx8fDE3NTgzNjE1NzR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            alt="Professional photographer at work"
+          />
+          <div class="black-background"></div>
+        </div>
+        
+        <div class="hero-caption">
+          <h1 class="hero-caption-text">
+            Capturing Life's
+            <span class="block">Beautiful Moments</span>
+          </h1>
+          <p class = "hero-caption-subtext">
+            Professional photography that tells your unique story with artistry and passion
+          </p>
+          <div class="flex-container">
+            <a routerLink="/portfolio">
+              <button class="hero-btn-view-portfolio">
+                View Portfolio
+              </button>
+            </a>
+            <a routerLink="/contact">
+              <button class="hero-btn-get-quote">
+                Get Quote
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick Intro Section -->
+      <section class="intro">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl mb-6 text-black">Welcome to My World</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              I'm Nkabi Sebothoma, a passionate photographer specializing in weddings, portraits, and landscapes. 
+              With over 8 years of experience, I capture moments that become timeless memories.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <svg class="h-12 w-12 text-red-600 mx-auto mb-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h2l2-3h8l2 3h2a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V9a2 2 0 012-2z"/>
+                  <circle cx="12" cy="13" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
+                </svg>
+                <h3 className="text-xl mb-3 text-black">Professional Quality</h3>
+                <p className="text-gray-600">
+                  State-of-the-art equipment and techniques to deliver stunning, high-resolution images.
+                </p>
+              </div>
+            </div>
+            
+            <div className="text-center">
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <svg class="h-12 w-12 text-red-600 mx-auto mb-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 21C12 21 7 16.5 4 13.5C1.5 11 2 7.5 5 6C7.5 4.5 10 6.5 12 8.5C14 6.5 16.5 4.5 19 6C22 7.5 22.5 11 20 13.5C17 16.5 12 21 12 21Z"/>
+                </svg>
+                <h3 className="text-xl mb-3 text-black">Passionate Approach</h3>
+                <p className="text-gray-600">
+                  Every shoot is approached with genuine enthusiasm and creative vision.
+                </p>
+              </div>
+            </div>
+            
+            <div className="text-center">
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <svg class="h-12 w-12 text-red-600 mx-auto mb-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                </svg>
+                <h3 className="text-xl mb-3 text-black">Exceptional Service</h3>
+                <p className="text-gray-600">
+                  Personalized experience from consultation to final delivery of your images.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!--Featured Work Preview -->
+      <section className="py-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl mb-4">Recent Work</h2>
+            <p className="text-xl text-gray-600">A glimpse into my latest photography projects</p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="relative group overflow-hidden rounded-lg">
+              <img
+                src="https://images.unsplash.com/photo-1700157679224-56c9f3d15118?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWRkaW5nJTIwcGhvdG9ncmFwaHklMjBicmlkZSUyMGdyb29tfGVufDF8fHx8MTc1ODM2MTU3NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                alt="Wedding photography"
+                className="w-full h-80 object-cover transition-transform group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <span className="text-white text-xl">Weddings</span>
+              </div>
+            </div>
+            
+            <div className="relative group overflow-hidden rounded-lg">
+              <img src="https://images.unsplash.com/photo-1612052355380-d7c1d631f00f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMHBob3RvZ3JhcGh5JTIwc3R1ZGlvfGVufDF8fHx8MTc1ODMxMDEyN3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                alt="Portrait photography"
+                className="w-full h-80 object-cover transition-transform group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <span className="text-white text-xl">Portraits</span>
+              </div>
+            </div>
+            
+            <div className="relative group overflow-hidden rounded-lg">
+              <img
+                src="https://images.unsplash.com/photo-1729944080510-16b8a89df8b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNsYW5kc2NhcGUlMjBwaG90b2dyYXBoeSUyMG1vdW50YWluc3xlbnwxfHx8fDE3NTgzMTAxMjd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                alt="Landscape photography"
+                className="w-full h-80 object-cover transition-transform group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <span className="text-white text-xl">Landscapes</span>
+              </div>
+            </div>
+          </div>
+          
+          <div className="text-center mt-12">
+            <a routerLink="/portfolio">
+              <button class="bg-red-600 hover:bg-red-700 text-white text-lg px-6 py-3 rounded">
+                View Full Portfolio
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+</div>
