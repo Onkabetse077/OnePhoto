@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { Navigation } from "./navigation/navigation";
 
 @Component({
@@ -12,7 +12,13 @@ export class App {
   protected readonly title = signal('OnePhoto');
   isAdminMode = false;
 
+  constructor(private router: Router) {}
+
   setIsAdminMode(value: boolean) {
     this.isAdminMode = value;
+  }
+
+  goToPortfolio() {
+    this.router.navigate(['/portfolio']);
   }
 }
