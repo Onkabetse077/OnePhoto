@@ -18,7 +18,7 @@
             Professional photography that tells your unique story with artistry and passion
           </p>
           <div class="flex-container">
-            <a routerLink="/portfolio">
+            <a (click)="navigateToPortfolio()" routerLink="/portfolio">
               <button class="hero-btn-view-portfolio">
                 View Portfolio
               </button>
@@ -128,7 +128,7 @@
           </div>
 
           <div class="text-center-mt-featured">
-            <a routerLink="/portfolio">
+            <a (click)="navigateToPortfolio()" routerLink="/portfolio">
               <button class="button-view-portfolio-featured">
                 View Full Portfolio
               </button>
