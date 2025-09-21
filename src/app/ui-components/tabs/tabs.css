@@ -1,0 +1,26 @@
+.custom-tabs {
+  max-width: 28rem;
+  margin: 0 auto;
+}
+
+.custom-tabs .mat-mdc-tab-header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #f3f4f6;
+  border-radius: 0.75rem;
+  padding: 3px;
+}
+
+.custom-tabs .mat-mdc-tab {
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.custom-tabs .mat-mdc-tab.mdc-tab--active {
+  background: #fff;
+  color: #2563eb;
+  box-shadow: 0 0 0 1px #2563eb;
+}

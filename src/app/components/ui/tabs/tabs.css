@@ -1,0 +1,31 @@
+/* Tab container */
+.custom-tabs {
+  max-width: 28rem; /* max-w-md */
+  margin: 0 auto;
+}
+
+/* Tab header row grid */
+.custom-tabs .mat-mdc-tab-header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.25rem;
+  background-color: var(--mat-grey-200);
+  border-radius: 0.75rem;
+  padding: 3px;
+}
+
+/* Tab labels */
+.custom-tabs .mat-mdc-tab {
+  text-align: center;
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500;
+  border-radius: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+/* Active state */
+.custom-tabs .mat-mdc-tab.mdc-tab--active {
+  background: var(--mat-card-background-color, white);
+  color: var(--mat-primary);
+  box-shadow: 0 0 0 1px var(--mat-primary);
+}
