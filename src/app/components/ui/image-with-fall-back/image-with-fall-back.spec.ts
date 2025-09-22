@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Tabs } from './tabs';
+import { ImageWithFallBack } from './image-with-fall-back';
 
-describe('Tabs', () => {
-  let component: Tabs;
-  let fixture: ComponentFixture<Tabs>;
+describe('ImageWithFallBack', () => {
+  let component: ImageWithFallBack;
+  let fixture: ComponentFixture<ImageWithFallBack>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Tabs]
+      imports: [ImageWithFallBack]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Tabs);
+    fixture = TestBed.createComponent(ImageWithFallBack);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

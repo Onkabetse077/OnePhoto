@@ -1,0 +1,25 @@
+<div class="bg-white text-black flex flex-col gap-6 rounded-xl border" [ngClass]="className">
+
+  <!-- Header + Action -->
+  <div class="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 pt-6">
+    <ng-content select="[card-header]"></ng-content>
+    <ng-content select="[card-action]"></ng-content>
+  </div>
+
+  <!-- Title + Description -->
+  <div class="px-6">
+    <ng-content select="[card-title]"></ng-content>
+    <ng-content select="[card-description]"></ng-content>
+  </div>
+
+  <!-- Main Content -->
+  <div class="px-6 pb-6">
+    <ng-content select="[card-content]"></ng-content>
+  </div>
+
+  <!-- Footer -->
+  <div class="flex items-center px-6 pb-6 pt-6">
+    <ng-content select="[card-footer]"></ng-content>
+  </div>
+
+</div>

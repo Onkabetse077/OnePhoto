@@ -1,31 +1,42 @@
-/* Tab container */
-.custom-tabs {
-  max-width: 28rem; /* max-w-md */
-  margin: 0 auto;
+.tabs-root {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-/* Tab header row grid */
-.custom-tabs .mat-mdc-tab-header {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.25rem;
-  background-color: var(--mat-grey-200);
+.tabs-list {
+  display: inline-flex;
+  background-color: #f0f0f0;
   border-radius: 0.75rem;
   padding: 3px;
 }
 
-/* Tab labels */
-.custom-tabs .mat-mdc-tab {
-  text-align: center;
-  font-size: 0.875rem; /* text-sm */
-  font-weight: 500;
+.tabs-trigger {
+  flex: 1;
+  padding: 0.25rem 0.5rem;
   border-radius: 0.75rem;
-  transition: all 0.2s ease;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.2s;
 }
 
-/* Active state */
-.custom-tabs .mat-mdc-tab.mdc-tab--active {
-  background: var(--mat-card-background-color, white);
-  color: var(--mat-primary);
-  box-shadow: 0 0 0 1px var(--mat-primary);
+.tabs-trigger.active {
+  background-color: #ffffff;
+  box-shadow: 0 0 0 2px #ccc;
+  color: #000;
+}
+
+.tabs-trigger:hover {
+  background-color: #e0e0e0;
+}
+
+.tabs-content {
+  flex: 1;
+  padding: 1rem;
+  outline: none;
+  background-color: #fafafa;
+  border-radius: 0.5rem;
+  border: 1px solid #ddd;
 }

@@ -1,0 +1,24 @@
+<!-- Overlay -->
+<div
+  *ngIf="isOpen"
+  class="fixed inset-0 z-50 bg-black/50 flex items-center justify-center"
+  onclick="onClose()"
+>
+  <!-- Dialog Content -->
+  <div
+    class="bg-white rounded-lg shadow-lg max-w-lg w-full p-6 relative"
+    onclick="$event.stopPropagation()"
+  >
+    <!-- Close Button -->
+    <button
+      class="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
+      onclick="onClose()"
+    >
+      ✕
+      <span class="sr-only">Close</span>
+    </button>
+
+    <!-- Dialog Content Slot -->
+    <ng-content></ng-content>
+  </div>
+</div>
