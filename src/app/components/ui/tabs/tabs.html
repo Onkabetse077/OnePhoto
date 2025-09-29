@@ -1,8 +1,20 @@
-<mat-tab-group
-  [selectedIndex]="selectedIndex"
-  (selectedIndexChange)="onCategoryChange($event)"
-  class="custom-tabs mb-12"
->
-  <mat-tab *ngFor="let category of categories" [label]="category.label">
-  </mat-tab>
-</mat-tab-group>
+<div class="tabs-root">
+  <!-- Tabs List -->
+  <div class="tabs-list">
+    <button
+      *ngFor="let tab of tabs"
+      class="tabs-trigger"
+      [class.active]="tab.id === activeTabId"
+      (click)="selectTab(tab.id)"
+    >
+      {{ tab.label }}
+    </button>
+  </div>
+
+  <!-- Tabs Content -->
+  <div class="tabs-content">
+    <div *ngFor="let tab of tabs" [hidden]="tab.id !== activeTabId">
+      {{ tab.content }}
+    </div>
+  </div>
+</div>

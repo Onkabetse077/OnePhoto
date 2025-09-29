@@ -1,0 +1,11 @@
+<img
+  *ngIf="!hasError"
+  [src]="src"
+  [alt]="alt"
+  (error)="onError()"
+  class="w-full h-auto"
+/>
+
+<div *ngIf="hasError" class="inline-block bg-gray-100 text-center align-middle w-full h-full">
+  <img [src]="fallbackSrc" [alt]="alt" class="mx-auto" />
+</div>

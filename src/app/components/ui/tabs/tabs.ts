@@ -1,34 +1,28 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatTabsModule } from '@angular/material/tabs';
 
-interface Category {
-  id: string;
+interface Tab {
   label: string;
+  content: string;
+  id: string;
 }
 
 @Component({
-  selector: 'app-tabs',
+  selector: 'app-tabs', 
   templateUrl: './tabs.html',
-   standalone: true,
-  imports: [CommonModule, MatTabsModule],
-  styleUrls: ['./tabs.css']
+  styleUrls: ['./tabs.css'],
+  imports: [CommonModule],
 })
 export class TabsComponent {
-  selectedCategory = 'weddings';
-
-  categories: Category[] = [
-    { id: 'weddings', label: 'Weddings' },
-    { id: 'portraits', label: 'Portraits' },
-    { id: 'landscapes', label: 'Landscapes' },
-    { id: 'all', label: 'All' }
+  tabs: Tab[] = [
+    { id: 'tab1', label: 'Tab 1', content: 'Content for Tab 1' },
+    { id: 'tab2', label: 'Tab 2', content: 'Content for Tab 2' },
+    { id: 'tab3', label: 'Tab 3', content: 'Content for Tab 3' },
   ];
 
- get selectedIndex(): number {
-    return this.categories.findIndex(c => c.id === this.selectedCategory);
-  }
+  activeTabId = this.tabs[0].id;
 
-  onCategoryChange(index: number): void {
-    this.selectedCategory = this.categories[index].id;
+  selectTab(id: string) {
+    this.activeTabId = id;
   }
 }
