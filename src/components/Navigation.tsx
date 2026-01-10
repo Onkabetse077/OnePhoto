@@ -43,7 +43,8 @@ export function Navigation({ isAdminMode, setIsAdminMode }: NavigationProps) {
             ))}
           </div>
 
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4"></div>
+          <div className="flex items-center space-x-4" hidden>
             <Button
               variant="ghost"
               size="sm"
